@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 class DataBase {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
   final _uid = Get.find<UserController>().user.id;
+  // ignore: deprecated_member_use
   List<UserModel> allUsers = List<UserModel>();
   List<ElectionModel> allElections = List<ElectionModel>();
   ElectionModel indexedElection = ElectionModel();
